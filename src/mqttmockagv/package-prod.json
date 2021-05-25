@@ -1,0 +1,9 @@
+{
+  "name": "mqttmockagv",
+  "version": "1.0.0",
+  "main": "mqttmockagv/index.js",
+  "license": "ISC",
+  "dependencies": {
+    "@actyx/pond": "2"
+  }
+}

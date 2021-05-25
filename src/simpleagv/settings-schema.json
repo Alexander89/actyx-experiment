@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "object",
+  "properties": {
+    "deviceName": {
+      "description": "Name of the AGV, also used for the network communication",
+      "type": "string",
+      "examples": ["agv1", "agv2"]
+    },
+    "mqtt": {
+      "description": "Name of the AGV, also used for the network communication",
+      "type": "string",
+      "examples": ["mqtt://localhost"]
+    },
+    "topics": {
+      "type": "object",
+      "required": ["cancel", "arrived", "moveTo"],
+      "properties": {
+        "cancel": {
+          "description": "topic to send the cancel current move message",
+          "type": "string",
+          "examples": ["move_id_cancel"]
+        },
+        "arrived": {
+          "description": "topic to receive the arrived message",
+          "type": "string",
+          "examples": ["move_id_result"]
+        },
+        "moveTo": {
+          "description": "topic to send the go to message",
+          "type": "string",
+          "examples": ["move_id_goal"]
+        }
+      }
+    }
+  },
+  "required": ["deviceName"],
+  "default": {
+    "deviceName": "agv",
+    "mqtt": "mqtt://localhost",
+    "topics": {
+      "cancel": "move_id_cancel",
+      "arrived": "move_id_result",
+      "moveTo": "move_id_goal"
+    }
+  }
+}

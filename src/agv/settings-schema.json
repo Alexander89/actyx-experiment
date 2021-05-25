@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "object",
+  "properties": {
+    "deviceName": {
+      "description": "Name of the AGV, also used for the network communication",
+      "type": "string",
+      "examples": ["agv1", "agv2"]
+    }
+  },
+  "required": ["deviceName"]
+}

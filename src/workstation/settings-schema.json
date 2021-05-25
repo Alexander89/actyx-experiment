@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "object",
+  "properties": {
+    "workstationName": {
+      "description": "Name of the workstation, also used for the network communication",
+      "type": "string",
+      "examples": ["Workstation1", "Hand Craft Station1"]
+    },
+    "preferredStorage": {
+      "description": "name of the storage where the goods should come from",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "required": ["workstationName", "preferredStorage"]
+}

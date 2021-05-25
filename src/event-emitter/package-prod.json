@@ -1,0 +1,9 @@
+{
+  "name": "agvsimulation",
+  "version": "1.0.0",
+  "main": "agvsimulation/index.js",
+  "license": "ISC",
+  "dependencies": {
+    "@actyx/pond": "2"
+  }
+}

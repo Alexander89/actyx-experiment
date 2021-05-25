@@ -1,0 +1,47 @@
+.orderList {
+  display: grid;
+  grid-template-columns: 40px 15% auto auto;
+  row-gap: 1px;
+  background-color: #f0f0f5;
+  font-size: large;
+  border-top: solid 1px #dfdfdf;
+  overflow: hidden;
+  border-radius: 12px;
+  width: 460px;
+}
+.orderList > div {
+  background-color: white;
+  padding: 10px 0px 10px 10px;
+}
+.orderList > div:nth-child(-n+4) {
+  background-color: #f4f4f6;
+  font-weight: bolder;
+}
+
+
+.materialRequestInfo {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.materialRequestList {
+  border-radius: 12px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 1px;
+  background-color: #e0e1e6;
+  border-top: solid 1px #dfdfdf;
+}
+.materialRequestList > div {
+  background-color: #eeeff5;
+  padding: 12px 24px;
+}
+.materialRequestList > div:nth-child(-n+2) {
+  background-color: #e6e6ec;
+  font-weight: bolder;
+}
+.partList {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}

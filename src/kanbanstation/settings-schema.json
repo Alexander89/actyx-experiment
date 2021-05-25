@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "object",
+  "required": ["stationId", "goalId"],
+  "properties": {
+    "stationId": {
+      "description": "Name of the workstation, also used for the network communication",
+      "type": "string",
+      "examples": ["Workstation 1", "Hand Craft Station 1", "charging Station 1"]
+    },
+    "goalId": {
+      "description": "uniq goalId for the AGV interface",
+      "type": "string",
+      "pattern": "^[1-9][0-9]*$",
+      "examples": ["1", "2"]
+    }
+  },
+  "default": {
+    "stationId": "Station 1",
+    "goalId": "1"
+  }
+}
